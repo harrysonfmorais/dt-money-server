@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  dt-money-pg:
+    image: bitnami/postgresql
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=dt-money
+      - POSTGRESQL_PASSWORD=dt-money
+      - POSTGRESQL_DATABASE=dtmoney
